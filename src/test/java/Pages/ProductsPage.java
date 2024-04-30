@@ -19,7 +19,7 @@ public class ProductsPage {
 
     public static String sportsShoesDropdown_xpath = "(//i[@class='fa fa-angle-double-down sportsshoedropdown'])[1]";
 
-    public static String sneakersDropdown_xpath = "(//i[@class='fa fa-angle-double-down formalshoedropdown'])[1]";
+    //public static String sneakersDropdown_xpath = "(//i[@class='fa fa-angle-double-down formalshoedropdown'])[1]";
 
     public static String formalShoes_firstShoeName = "/html/body/div[2]/table/tbody/tr[1]/td[1]";
 
@@ -28,7 +28,7 @@ public class ProductsPage {
 
     public static void formalShoes_verifyTitle() {
 
-        String expectedTitle = "Formal Shoes ";
+        String expectedTitle = "Formal Shoes";
         String actualTitle = driver.findElement(By.xpath(formalShoes_xpath)).getText();
         Assert.assertEquals(expectedTitle, actualTitle);
         if (expectedTitle.equals(actualTitle)) {
